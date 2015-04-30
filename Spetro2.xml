@@ -49,17 +49,21 @@
                       <block type="movement_stop" id="82"></block>
                     </statement>
                     <statement name="ELSE">
-                      <block type="movement_forward" id="66"></block>
-                    </statement>
-                    <next>
-                      <block type="robot_delay" id="84" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="91">
-                            <field name="NUM">200</field>
+                      <block type="movement_forward" id="66">
+                        <next>
+                          <block type="robot_delay" id="84" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="91">
+                                <field name="NUM">200</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_stop" id="150"></block>
+                            </next>
                           </block>
-                        </value>
+                        </next>
                       </block>
-                    </next>
+                    </statement>
                   </block>
                 </next>
               </block>
